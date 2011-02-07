@@ -12,7 +12,7 @@ fi
 cd $DIR/vendor
 
 # Symfony
-git clone git://github.com/symfony/symfony.git symfony
+git clone git://github.com/fabpot/symfony.git symfony
 
 # Doctrine ORM
 git clone git://github.com/doctrine/doctrine2.git doctrine
