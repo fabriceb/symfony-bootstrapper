@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd $(dirname $0)
+cd $(dirname $0)/../src
 
 # initialization
 if [ "$1" = "--reinstall" ]; then
@@ -25,6 +25,9 @@ install_git()
         git clone $SOURCE_URL $INSTALL_DIR
     fi
 }
+
+# Symfony
+install_git symfony git://github.com/symfony/symfony.git
 
 # Assetic
 install_git assetic git://github.com/kriswallsmith/assetic.git
